@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: bisque;
+        }
+        .todo{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        .todo input{
+            width: 80%;
+            padding: 5px;
+        }
+        .todo .task ol li{
+            position: relative;
+            margin-bottom: 10px;
+            color: lightcoral;
+        }
+        .todo ol li .check{
+            position: absolute;
+            right: 10px;
+            color: lightcoral;
+        }
+        .todo ol li .delete{
+            position: absolute;
+            right: 60px;
+            color: lightcoral;
+        }
+        .todo .checked{
+            text-decoration: line-through;
+            color: green;
+        }
+        
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo">
+        <input type="text" placeholder="Write your today's plan....">
+        <button>Add</button>
+        <div class="task">
+            <ol>
+                
+            </ol>
+        </div>
+     </div>
+    <script src="app.js"></script>
+</body>
+</html>
